@@ -8,7 +8,9 @@ import (
 func main(){
 	log.SetPrefix("greetings: ")
     log.SetFlags(0)
-	mes, err := greetings.Hello("haishen")
+
+	names := []string {"haishen", "yudonglai", "guanyu", "zhangfei"}
+	mes, err := greetings.Hellos(names)
 	if err != nil{
 		log.Fatal(err)
 	}
